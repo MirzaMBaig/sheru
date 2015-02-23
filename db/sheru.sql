@@ -1,0 +1,14 @@
+CREATE TABLE IF NOT EXISTS `sheru`.`daily_share_data` (
+  `id` BIGINT UNSIGNED NOT NULL AUTO_INCREMENT,
+  `company_name` VARCHAR(100) NOT NULL,
+  `conpany_sym` VARCHAR(10) NOT NULL,
+  `date` DATETIME NOT NULL DEFAULT CURRENT_TIMESTAMP,
+  `open` DECIMAL(10,3) NULL,
+  `high` DECIMAL(10,3) NULL,
+  `low` DECIMAL(10,3) NULL,
+  `close` DECIMAL(10,3) NULL,
+  `volume` BIGINT UNSIGNED NULL,
+  `category` VARCHAR(100) NULL,
+  `sector` VARCHAR(100) NULL,
+  PRIMARY KEY (`id`))
+ENGINE = InnoDB
